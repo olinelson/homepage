@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div className="about">
       <h4>about</h4>
       <p>
         Oli Nelson is an acclaimed Australian drummer from Sydney Australia, now

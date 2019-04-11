@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function SignUpForm() {
   return (
-    <div>
-      <p>Sign Up Form</p>
-    </div>
-  )
+
+      <form className="sign-up-form"> 
+        <p>email list</p>
+        <input />
+        <button>sign up</button>
+      </form>
+
+  );
 }

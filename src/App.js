@@ -9,6 +9,7 @@ import DrumsPage from "./hocs/DrumsPage";
 // components
 import NavBar from "./NavBar";
 
+
 // font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -24,6 +25,7 @@ class App extends Component {
           <NavBar />
           <Route path="/code" exact component={CodePage} />
           <Route path="/drums" component={DrumsPage} />
+          <footer></footer>
         </div>
       </Router>
     );
