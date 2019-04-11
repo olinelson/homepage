@@ -2,12 +2,12 @@ import React from "react";
 
 export default function SignUpForm() {
   return (
-
-      <form className="sign-up-form"> 
-        <p>email list</p>
+    <div className="sign-up-form">
+      <h4>email list</h4>
+      <form>
         <input />
         <button>sign up</button>
       </form>
-
+    </div>
   );
 }

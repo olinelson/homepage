@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Press() {
   return (
     <div className="press-container">
+
       <div className="press-card">
         <FontAwesomeIcon className="quote-left" icon="quote-left" />
         <p>Fearlessly individualistic talent who defies easy categorization</p>
         <FontAwesomeIcon icon="quote-right" />
         <a href="https://newyorkmusicdaily.wordpress.com/2018/04/27/egs/">
-          - delarue | New York Music Daily
+          delarue | New York Music Daily
         </a>
       </div>
 
