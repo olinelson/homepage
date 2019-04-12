@@ -1,77 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
+
 import { NavLink } from "react-router-dom";
 
-class NavBar extends Component {
-  constructor() {
-    super();
-    this.state = {
-      light: true
-    };
-  }
+export default function NavBar(props) {
+  const displaySwitch = () => {
+    switch (props.display) {
+      case "drums":
+        console.log("drums");
+        return "nav-dark";
 
-  makeNavLight = () => {
-    this.setState({
-      light: true
-    });
-  };
+      case "code":
+        console.log("code");
+        return "nav-light";
 
-  makeNavDark = () => {
-    this.setState({
-      light: false
-    });
-  };
-
-  render = () => {
-    console.log(this.state);
-
-    if (this.state.light === true) {
-      return (
-        <nav className="nav-light">
-          <h4>oli nelson</h4>
-          <NavLink
-            id="nav-link-code"
-            onClick={this.makeNavLight}
-            to="/code"
-            activeClassName="selected"
-          >
-            code
-          </NavLink>
-
-          <NavLink
-            id="nav-link-drums"
-            onClick={this.makeNavDark}
-            to="/drums"
-            activeClassName="selected"
-          >
-            drums
-          </NavLink>
-        </nav>
-      );
-    } else {
-      return (
-        <nav className="nav-dark">
-          <h4>oli nelson</h4>
-          <NavLink
-            id="nav-link-code"
-            onClick={this.makeNavLight}
-            to="/code"
-            activeClassName="selected"
-          >
-            code
-          </NavLink>
-
-          <NavLink
-            id="nav-link-drums"
-            onClick={this.makeNavDark}
-            to="/drums"
-            activeClassName="selected"
-          >
-            drums
-          </NavLink>
-        </nav>
-      );
+      default:
+        console.log("home");
+        return "nav-home";
     }
   };
-}
 
-export default NavBar;
+  return (
+    <nav className={displaySwitch()}>
+      <h4>oli nelson</h4>
+      <NavLink id="nav-link-code" to="/code" activeClassName="selected">
+        code
+      </NavLink>
+
+      <NavLink id="nav-link-drums" to="/drums" activeClassName="selected">
+        drums
+      </NavLink>
+    </nav>
+  );
+}

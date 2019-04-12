@@ -6,8 +6,9 @@ import "./App.css";
 import CodePage from "./hocs/CodePage";
 import DrumsPage from "./hocs/DrumsPage";
 
-// components
-import NavBar from "./NavBar";
+//components
+import HomePage from "./HomePage"
+
 
 
 // font awesome
@@ -22,10 +23,10 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <NavBar />
           <Route path="/code" exact component={CodePage} />
-          <Route path="/drums" component={DrumsPage} />
-          <footer></footer>
+          <Route path="/drums" exact component={DrumsPage} />
+          <Route path="/" exact component={HomePage} />
+          
         </div>
       </Router>
     );
