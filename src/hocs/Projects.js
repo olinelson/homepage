@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from "react";
 
 import Project from "../Project";
+
+const uuidv1 = require("uuid/v1");
+
 export default class Projects extends Component {
   state = {
     starredProjects: []
@@ -23,17 +26,17 @@ export default class Projects extends Component {
     this.getGitHubStarredProjects();
   };
 
-
-
   render() {
     return (
       <div className="projects">
-      <h4>Projects</h4>
+        <h4>Projects</h4>
         {this.state.starredProjects.map(proj => (
           <Project
+            key={uuidv1()}
             name={proj.name}
             gitHubLink={proj.html_url}
             description={proj.description}
+            homepage={proj.homepage}
           />
         ))}
       </div>
