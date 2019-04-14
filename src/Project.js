@@ -9,6 +9,7 @@ const screenShot = (url, viewport, width) => {
   } else {
     return (
       <img
+        alt="website screen shot"
         src={`https://api.screenshotlayer.com/api/capture?access_key=${ScreenShotApiKey()}&url=${url}&viewport=${viewport}&width=${width}`}
       />
     );
@@ -19,7 +20,6 @@ export default function Project(props) {
   return (
     <div className="project-card">
       {screenShot(props.homepage, "1440x900", "1000")}
-
       <h5>{props.name.replace(/_/g, " ")}</h5>
       <a href={props.gitHubLink}>
         <FontAwesomeIcon icon={["fab", "github"]} />

@@ -29,7 +29,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="projects">
-        <h4>Projects</h4>
+        <h4>projects</h4>
         {this.state.starredProjects.map(proj => (
           <Project
             key={uuidv1()}

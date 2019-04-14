@@ -10,7 +10,7 @@ export default function CodePage() {
   return (
     <Fragment>
       <NavBar display="code" />
-      <div className="CodePage">
+      <div className="code-page">
         <CodingAbout />
         <CodingLinks />
         <Projects/>

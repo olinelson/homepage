@@ -36,6 +36,7 @@ html {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
+
 }
 
 nav {
@@ -63,7 +64,7 @@ h4 {
 }
 
 .nav-light {
-  background-color: white;
+  background-color: #F7F7F7;
   color: black;
 }
 .nav-dark {
@@ -108,29 +109,34 @@ display: none;
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  justify-self: center;
   display: grid;
-  grid-gap: 4rem;
+
 }
 
 .code-page{
-    background-color: white;
+    background-color: #F7F7F7;
     color: black;
     min-height: 100vh;
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    display: grid;
+    grid-gap: 2rem;
+   
 }
 
-.albums{
-  padding: 0 1rem;
+.albums {
+  width: 95%;
+  justify-self: center;
 }
+
+
 
 .albums-grid{
-  width: 100%;
+  width: 95%;
   margin: 0;
-  padding:1rem 0;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
@@ -143,7 +149,7 @@ display: none;
 }
 
 .banner-image {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -195,19 +201,21 @@ display: none;
 }
 
 .about {
-  padding: 0 1rem;
+  width: 95%;
+  justify-self: center;
 }
 
 .sign-up-form {
-
+  width: 95%;
   justify-content: center;
+  justify-self: center;
 
 }
 
 .sign-up-form h4 {
 
   width: 100%;
-  padding:0 1rem;
+
 }
 
 .sign-up-form form {
@@ -253,10 +261,34 @@ font-size: 2rem;
 }
 
 .projects{
+  width: 95%;
+  justify-self: center;
   display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 250px);
+
+
 }
-.projects h4 {
-  padding: 0 1rem;
+.project-card h5 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+.project-card {
+  border: 1px solid black;
+  justify-self: center;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  width: 90%;
+
+}
+.project-card img {
+  width: 110%;
+  justify-self: center;
+
+
+}
+
 
 
