@@ -27,9 +27,11 @@ export default class Projects extends Component {
   };
 
   render() {
+
     return (
       <div className="projects">
         <h4>projects</h4>
+        <div className="projects-grid">
         {this.state.starredProjects.map(proj => (
           <Project
             key={uuidv1()}
@@ -39,6 +41,7 @@ export default class Projects extends Component {
             homepage={proj.homepage}
           />
         ))}
+        </div>
       </div>
     );
   }

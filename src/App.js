@@ -14,9 +14,9 @@ import HomePage from "./HomePage"
 // font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteRight, faQuoteLeft, faImage, faDesktop } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faQuoteRight, faQuoteLeft);
+library.add(fab, faQuoteRight, faQuoteLeft, faImage, faDesktop);
 
 class App extends Component {
   render() {
