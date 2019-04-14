@@ -5,6 +5,7 @@ import CodingAbout from "../CodingAbout";
 import Projects from "./Projects"
 
 import CodingLinks from "../CodingLinks";
+import TechnicalSkills from "../TechnicalSkills";
 
 export default function CodePage() {
   return (
@@ -14,6 +15,7 @@ export default function CodePage() {
         <CodingAbout />
         <CodingLinks />
         <Projects/>
+        <TechnicalSkills/>
       </div>
       <footer />
     </Fragment>

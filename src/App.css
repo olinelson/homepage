@@ -121,10 +121,12 @@ display: none;
     height: 100%;
     width: 100%;
     margin: 0;
+    padding-bottom: 4rem;
     display: grid;
     grid-gap: 2rem;
-   
 }
+
+
 
 .albums {
   width: 95%;
@@ -194,6 +196,7 @@ display: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  justify-self: center;
 }
 
 .social-bar a {
@@ -264,7 +267,7 @@ font-size: 2rem;
   width: 95%;
   justify-self: center;
   grid-row-gap: 2rem;
-  padding-bottom: 4rem;
+
 
 
 }
@@ -343,5 +346,26 @@ font-size: 2rem;
 
 }
 
+.logo {
+  width: 1rem;
+  height: auto;
+}
+
+.technical-skills{
+  padding-bottom: 5rem;
+  width: 95%;
+  justify-self: center;
+}
+
+
+.technical-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-content: center;
+  margin-top: 1rem;
+}
+.technical-skills-grid p {
+  width: 100%;
+}
 
 

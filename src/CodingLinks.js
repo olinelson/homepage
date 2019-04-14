@@ -10,6 +10,10 @@ export default function CodingLinks() {
       <a href="https://www.linkedin.com/in/oliver-nelson-a5961793/">
         <FontAwesomeIcon icon={["fab", "linkedin"]} />
       </a>
+
+      <a href="https://medium.com/@olinelson93">
+        <FontAwesomeIcon icon={["fab", "medium"]} />
+      </a>
     </div>
   );
 }
