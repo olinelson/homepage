@@ -5,7 +5,8 @@ import SocialBar from "../SocialBar";
 import About from "../About";
 import AlbumGrid from "../AlbumGrid";
 import Press from "../Press";
-import SignUpForm from "../SignUpForm";
+import Contact from "../Contact"
+
 import NavBar from "../NavBar";
 // import PhotoSlider from "../PhotoSlider"
 
@@ -26,7 +27,7 @@ export default function DrumsPage() {
 
         <Press />
 
-        <SignUpForm />
+        <Contact/>
       </div>
       <footer />
     </Fragment>

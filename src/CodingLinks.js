@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CodingLinks() {
   return (
-    <div className="social-bar">
+    <div className="coding-links">
       <a href="https://github.com/olinelson">
         <FontAwesomeIcon icon={["fab", "github"]} />
       </a>
@@ -14,6 +14,8 @@ export default function CodingLinks() {
       <a href="https://medium.com/@olinelson93">
         <FontAwesomeIcon icon={["fab", "medium"]} />
       </a>
+
+     
     </div>
   );
 }

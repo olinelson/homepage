@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about container">
       <h4>about</h4>
       <p>
         Oli Nelson is an acclaimed Australian drummer from Sydney Australia, now
@@ -22,6 +22,7 @@ export default function About() {
         innovative artist who enjoys performing both ‘within’ and ‘on the edges’
         of the jazz and improvised dialects.
       </p>
+      
     </div>
   );
 }

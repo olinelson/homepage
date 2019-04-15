@@ -29,7 +29,7 @@ export default class Projects extends Component {
   render() {
 
     return (
-      <div className="projects">
+      <div className="projects container">
         <h4>projects</h4>
         <div className="projects-grid">
         {this.state.starredProjects.map(proj => (

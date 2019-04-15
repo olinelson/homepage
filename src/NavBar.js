@@ -21,12 +21,25 @@ export default function NavBar(props) {
 
   return (
     <nav className={displaySwitch()}>
-      <h4>oli nelson</h4>
-      <NavLink id="nav-link-code" to="/code" activeClassName="selected">
+      <NavLink id="nav-link-home" to="/" activeClassName="selected">
+        <h4>oli nelson</h4>
+      </NavLink>
+
+      <NavLink
+        className="nav-link"
+        id="nav-link-code"
+        to="/code"
+        activeClassName="selected"
+      >
         code
       </NavLink>
 
-      <NavLink id="nav-link-drums" to="/drums" activeClassName="selected">
+      <NavLink
+        className="nav-link"
+        id="nav-link-drums"
+        to="/drums"
+        activeClassName="selected"
+      >
         drums
       </NavLink>
     </nav>

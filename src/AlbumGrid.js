@@ -2,9 +2,9 @@ import React from "react";
 
 export default function AlbumGrid() {
   return (
-    <div className="albums">
-      <h4>Albums</h4>
-      <div className="albums-grid">
+    <div className="albums container">
+      <h4>albums</h4>
+      <div className="albums-grid container">
         <a href="https://54records.com.au/hieronymus-trio-where-the-rest-of-the-world-begins">
           <img src="images/wtrotwb.jpg" />
         </a>

@@ -1,9 +1,16 @@
 import React from "react";
+import CodingLinks from "./CodingLinks";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CodingAbout() {
   return (
-    <div className="about">
+    <div className="coding-about container">
       <h4>about</h4>
+      <img src="images/headshot.jpg" />
+
+      <CodingLinks />
+
       <p>
         Full stack web developer with a passion for innovation and efficiency.
         With experience in Ruby on Rails, JavaScript, React and a background in
@@ -14,7 +21,7 @@ export default function CodingAbout() {
         effective products. As an established musician, I am very comfortable as
         a self-directed learner and I understand the long term benefits of
         practice, patience and persistence when building skills and developing
-        unique products.
+        unique products.<a className="resume-link" href="https://docs.google.com/presentation/d/1--AjndSnU3yztOyNebUBDgXGvodAWFGYgK6zKJV3xyg/edit?usp=sharing">Click here to view resumé.</a>
       </p>
     </div>
   );
