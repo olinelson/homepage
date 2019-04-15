@@ -8,8 +8,8 @@ export default function HomePage() {
     <Fragment>
       <NavBar display="home" />
       <div className="home-page">
-        <NavLink to={"/code"}>Code </NavLink>
-        <NavLink to={"/drums"}>Drums </NavLink>
+        <NavLink to={"/code"}>code </NavLink>
+        <NavLink to={"/drums"}>drums </NavLink>
       </div>
     </Fragment>
   );

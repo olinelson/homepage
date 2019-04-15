@@ -58,7 +58,7 @@ export default function TechnicalSkills() {
 
         {/* JWT logo */}
         <p>
-          <img className="logo" src="http://jwt.io/img/icon.svg" /> JWT
+          <img alt="javascript web token logo" className="logo" src="http://jwt.io/img/icon.svg" /> JWT
         </p>
 
         {/* PostgreSQL logo */}

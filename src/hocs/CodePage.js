@@ -3,9 +3,8 @@ import React, { Fragment } from "react";
 import NavBar from "../NavBar";
 import CodingAbout from "../CodingAbout";
 import Projects from "./Projects"
-import Contact from "../Contact"
+import Footer from "../Footer"
 
-import CodingLinks from "../CodingLinks";
 import TechnicalSkills from "../TechnicalSkills";
 
 export default function CodePage() {
@@ -17,9 +16,9 @@ export default function CodePage() {
         {/* <CodingLinks /> */}
         <Projects/>
         <TechnicalSkills/>
-        <Contact/>
+
       </div>
-      <footer />
+    <Footer/>
     </Fragment>
   );
 }

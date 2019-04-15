@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 // higher order components (hocs)
@@ -11,12 +11,13 @@ import HomePage from "./HomePage"
 
 
 
+
 // font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faCopyright } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faFile);
+library.add(fab, faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faCopyright);
 
 class App extends Component {
   render() {

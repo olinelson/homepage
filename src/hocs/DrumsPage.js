@@ -5,7 +5,8 @@ import SocialBar from "../SocialBar";
 import About from "../About";
 import AlbumGrid from "../AlbumGrid";
 import Press from "../Press";
-import Contact from "../Contact"
+import Footer from "../Footer"
+
 
 import NavBar from "../NavBar";
 // import PhotoSlider from "../PhotoSlider"
@@ -15,7 +16,7 @@ export default function DrumsPage() {
     <Fragment>
       <NavBar display="drums" />
       <div className="drums-page">
-        <img className="banner-image" src="images/promo1.jpg" />
+        <img alt="oli nelson promo" className="banner-image" src="images/promo1.jpg" />
 
         {/* <PhotoSlider/> */}
 
@@ -27,9 +28,10 @@ export default function DrumsPage() {
 
         <Press />
 
-        <Contact/>
       </div>
-      <footer />
+
+      <Footer/>
+
     </Fragment>
   );
 }
