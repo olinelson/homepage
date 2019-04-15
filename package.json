@@ -1,6 +1,9 @@
 {
   "name": "my-site",
   "version": "0.1.0",
+  "engines": {
+    "node": "11.11.0"
+  }
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
