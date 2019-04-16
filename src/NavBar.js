@@ -6,15 +6,15 @@ export default function NavBar(props) {
   const displaySwitch = () => {
     switch (props.display) {
       case "drums":
-        console.log("drums");
+
         return "nav-dark";
 
       case "code":
-        console.log("code");
+
         return "nav-light";
 
       default:
-        console.log("home");
+
         return "nav-home";
     }
   };

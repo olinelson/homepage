@@ -36,7 +36,7 @@ library.add(
 
 class App extends Component {
   render() {
-    console.log(process.env.REACT_APP_SCREEN_SHOT_API_KEY);
+
     return (
       <Router>
         <div className="app">
