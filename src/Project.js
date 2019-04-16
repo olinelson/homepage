@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ScreenShotApiKey from "./ScreenShotApiKey";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -9,6 +8,8 @@ export default class Project extends Component {
   };
 
   screenShot = (url, viewport, width) => {
+    const apiKey = process.env.REACT_APP_SCREEN_SHOT_API_KEY;
+
     if (url === "" || url === null) {
       return <FontAwesomeIcon className="website-image" icon="image" />;
     } else {
@@ -16,7 +17,7 @@ export default class Project extends Component {
         <img
           className="website-image"
           alt="website screen shot"
-          src={`https://api.screenshotlayer.com/api/capture?access_key=${ScreenShotApiKey()}&url=${url}&viewport=${viewport}&width=${width}`}
+          src={`https://api.screenshotlayer.com/api/capture?access_key=${apiKey}&url=${url}&viewport=${viewport}&width=${width}`}
         />
       );
     }
@@ -39,7 +40,6 @@ export default class Project extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="project-card">
         {this.screenShot(this.props.homepage, "1400x900", "1000")}

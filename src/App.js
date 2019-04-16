@@ -7,27 +7,42 @@ import CodePage from "./hocs/CodePage";
 import DrumsPage from "./hocs/DrumsPage";
 
 //components
-import HomePage from "./HomePage"
-
-
-
+import HomePage from "./HomePage";
 
 // font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import {
+  faQuoteRight,
+  faQuoteLeft,
+  faImage,
+  faDesktop,
+  faGem,
+  faCopyright
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faQuoteRight, faQuoteLeft, faImage, faDesktop, faGem, faCopyright);
+// dotenv
+require("dotenv").config();
+
+library.add(
+  fab,
+  faQuoteRight,
+  faQuoteLeft,
+  faImage,
+  faDesktop,
+  faGem,
+  faCopyright
+);
 
 class App extends Component {
   render() {
+    console.log(process.env.REACT_APP_SCREEN_SHOT_API_KEY);
     return (
       <Router>
         <div className="app">
           <Route path="/code" exact component={CodePage} />
           <Route path="/drums" exact component={DrumsPage} />
           <Route path="/" exact component={HomePage} />
-          
         </div>
       </Router>
     );
