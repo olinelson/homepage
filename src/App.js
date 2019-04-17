@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 
 // higher order components (hocs)
@@ -38,13 +38,13 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <HashRouter basename='/'>
         <div className="app">
           <Route path="/code" exact component={CodePage} />
           <Route path="/drums" exact component={DrumsPage} />
           <Route path="/" exact component={HomePage} />
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
