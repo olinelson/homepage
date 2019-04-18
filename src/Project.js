@@ -7,21 +7,6 @@ export default class Project extends Component {
     languages: []
   };
 
-  screenShot = (url, viewport, width) => {
-    const apiKey = process.env.REACT_APP_SCREEN_SHOT_API_KEY;
-
-    if (url === "" || url === null) {
-      return <FontAwesomeIcon className="website-image" icon="image" />;
-    } else {
-      return (
-        <img
-          className="website-image"
-          alt="website screen shot"
-          src={`https://api.screenshotlayer.com/api/capture?access_key=${apiKey}&url=${url}&viewport=${viewport}&width=${width}`}
-        />
-      );
-    }
-  };
 
   getProjectsLanguages = () => {
     fetch(`https://api.github.com/repos/olinelson/${this.props.name}/languages`)
@@ -42,7 +27,11 @@ export default class Project extends Component {
   render() {
     return (
       <div className="project-card">
-        {this.screenShot(this.props.homepage, "1400x900", "1000")}
+        <img
+          className="website-image"
+          alt={`${this.props.name} screen shot`}
+          src={`https://raw.githubusercontent.com/olinelson/${this.props.name}/master/public/preview_image.jpg`}
+        />
 
         <h5>{this.props.name.replace(/_/g, " ")}</h5>
 

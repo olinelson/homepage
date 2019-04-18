@@ -9,8 +9,7 @@ export default class Projects extends Component {
     starredProjects: []
   };
 
-  // const ScreenShotApiKey=
-  // efb0e3fce4a2b562e91af3d3c8fb3e7d
+
 
   getGitHubStarredProjects = () => {
     fetch("https://api.github.com/users/olinelson/starred")
