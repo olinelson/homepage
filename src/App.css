@@ -339,6 +339,10 @@ font-size: 2rem;
   justify-self: center;
 }
 
+.website-image:hover {
+  cursor: pointer;
+}
+
 .languages-grid{
     margin: 2rem 1rem;
     display: flex;

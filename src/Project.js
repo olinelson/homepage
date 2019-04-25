@@ -28,6 +28,7 @@ export default class Project extends Component {
     return (
       <div className="project-card">
         <img
+          onClick={()=> window.open(this.props.homepage, "_blank")}
           className="website-image"
           alt={`${this.props.name} screen shot`}
           src={`https://raw.githubusercontent.com/olinelson/${this.props.name}/master/public/preview_image.jpg`}
