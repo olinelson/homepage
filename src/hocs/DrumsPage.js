@@ -1,37 +1,50 @@
-import React, { Fragment } from "react";
+import React, { Fragment, Component } from "react";
 
 //components
 
 import About from "../About";
 import AlbumGrid from "../AlbumGrid";
 import Press from "../Press";
-import Footer from "../Footer"
-
+import Footer from "../Footer";
 
 import NavBar from "../NavBar";
 // import PhotoSlider from "../PhotoSlider"
 
-export default function DrumsPage() {
-  return (
-    <Fragment>
-      <NavBar display="drums" />
-      <div className="drums-page">
-        {/* <img alt="oli nelson promo" className="banner-image" src="images/promo1.jpg" /> */}
+import posed from "react-pose";
 
-        {/* <PhotoSlider/> */}
+const Box = posed.div({
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 }
+});
 
-        <About />
+export default class DrumsPage extends Component {
+  state = {
+    isVisible: false
+  };
 
-        {/* <SocialBar /> */}
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isVisible: true });
+    }, 100);
+  }
 
-        <AlbumGrid />
+  render() {
+    return (
+      <Fragment>
+        <NavBar display="drums" />
+        <Box
+          className="box drums-page"
+          pose={this.state.isVisible ? "visible" : "hidden"}
+        >
+          <About />
 
-        <Press />
+          <AlbumGrid />
 
-      </div>
+          <Press />
+        </Box>
 
-      <Footer/>
-
-    </Fragment>
-  );
+        <Footer />
+      </Fragment>
+    );
+  }
 }
