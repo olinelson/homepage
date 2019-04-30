@@ -25,7 +25,7 @@ export default class DrumsPage extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isVisible: true });
-    }, 100);
+    }, 50);
   }
 
   render() {
