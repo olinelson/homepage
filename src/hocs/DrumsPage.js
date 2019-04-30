@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 //components
-import SocialBar from "../SocialBar";
+
 import About from "../About";
 import AlbumGrid from "../AlbumGrid";
 import Press from "../Press";
