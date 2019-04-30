@@ -3,10 +3,10 @@ import CodingLinks from "./CodingLinks";
 
 export default function CodingAbout() {
   return (
-    <div className="coding-about container">
+    <div className="about container">
       <img alt="oli nelson promo" src="images/headshot.jpg" />
 
-      <div className="coding-about-body">
+      <div className="about-body">
         <h4>about</h4>
 
         <CodingLinks />

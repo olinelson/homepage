@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SocialBar() {
   return (
-    <div className="social-bar">
+    <div className="social-links">
       <a href="https://www.youtube.com/user/MrOlibobo">
         <FontAwesomeIcon icon={["fab", "youtube"]} />
       </a>

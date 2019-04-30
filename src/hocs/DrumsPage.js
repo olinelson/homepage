@@ -16,13 +16,13 @@ export default function DrumsPage() {
     <Fragment>
       <NavBar display="drums" />
       <div className="drums-page">
-        <img alt="oli nelson promo" className="banner-image" src="images/promo1.jpg" />
+        {/* <img alt="oli nelson promo" className="banner-image" src="images/promo1.jpg" /> */}
 
         {/* <PhotoSlider/> */}
 
         <About />
 
-        <SocialBar />
+        {/* <SocialBar /> */}
 
         <AlbumGrid />
 
