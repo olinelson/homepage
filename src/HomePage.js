@@ -18,7 +18,7 @@ export default class HomePage extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({isVisible: true});
-    }, 200);
+    }, 50);
   }
 
   render() {
