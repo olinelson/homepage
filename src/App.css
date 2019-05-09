@@ -136,7 +136,7 @@ display: none;
 }
 
 @media only screen and (max-width: 600px)  {
-  .coding-about {
+  .about {
     grid-template-columns: 1fr;
   }
 }
