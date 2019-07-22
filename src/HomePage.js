@@ -1,6 +1,8 @@
 import React, { Fragment, Component } from "react";
 import { NavLink } from "react-router-dom";
 
+import style from "styled-components"
+
 import posed from "react-pose";
 
 import NavBar from "./NavBar";
@@ -17,9 +19,11 @@ export default class HomePage extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState({isVisible: true});
+      this.setState({ isVisible: true });
     }, 50);
   }
+
+
 
   render() {
     return (
