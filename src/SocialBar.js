@@ -1,21 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Icon } from "semantic-ui-react";
 
 export default function SocialBar() {
-  return (
-    <div className="social-links">
-      <a href="https://www.youtube.com/user/MrOlibobo">
-        <FontAwesomeIcon icon={["fab", "youtube"]} />
-      </a>
-      <a href="https://www.facebook.com/oli.nelson1">
-        <FontAwesomeIcon icon={["fab", "facebook"]} />
-      </a>
-      <a href="https://www.instagram.com/olinelsondrums/">
-        <FontAwesomeIcon icon={["fab", "instagram"]} />
-      </a>
-      <a href="https://medium.com/@olinelson93">
-        <FontAwesomeIcon icon={["fab", "medium"]} />
-      </a>
-    </div>
-  );
+    return <>
+        <Icon color="red" size="large" href="https://www.youtube.com/user/MrOlibobo" name="youtube" />
+        <Icon color="red" size="large" href="https://www.facebook.com/oli.nelson1" name="facebook" />
+        <Icon color="red" size="large" href="https://www.instagram.com/olinelsondrums/" name="instagram" />
+        <Icon color="red" size="large" href="https://medium.com/@olinelson93" icon="medium" />
+    </>
+
+
 }

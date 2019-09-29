@@ -2,46 +2,46 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
+import { Menu, Icon } from "semantic-ui-react"
+
 export default function NavBar(props) {
-  const displaySwitch = () => {
-    switch (props.display) {
-      case "drums":
 
-        return "nav-dark";
+  if (props.location.pathname === "/") return null
 
-      case "code":
-
-        return "nav-light";
-
-      default:
-
-        return "nav-home";
-    }
-  };
+  console.log(props.location.pathname)
 
   return (
-    <nav className={displaySwitch()}>
-      <NavLink id="nav-link-home" to="/" activeClassName="selected">
-        <h4>oli nelson</h4>
-      </NavLink>
+    <Menu pointing secondary inverted={props.location.pathname === '/drums'}>
+      {/* <Menu.Item
+        as={NavLink}
+        to="/"
+        active={false}
+      > */}
+      {/* <h4>oli nelson</h4>
+      </Menu.Item> */}
 
-      <NavLink
-        className="nav-link"
-        id="nav-link-code"
+      <Menu.Item as={NavLink}
         to="/code"
-        activeClassName="selected"
+        active={props.location.pathname === '/code'}
+
       >
         code
-      </NavLink>
+      </Menu.Item>
 
-      <NavLink
-        className="nav-link"
-        id="nav-link-drums"
+      <Menu.Item as={NavLink}
         to="/drums"
-        activeClassName="selected"
+        active={props.location.pathname === '/drums'}
+
       >
         drums
-      </NavLink>
-    </nav>
+      </Menu.Item>
+
+      <Menu.Menu position="right">
+        <Menu.Item color="red" href="https://www.youtube.com/user/MrOlibobo" icon="youtube" />
+        <Menu.Item color="red" href="https://www.facebook.com/oli.nelson1" icon="facebook" />
+        <Menu.Item color="red" href="https://www.instagram.com/olinelsondrums/" icon="instagram" />
+        <Menu.Item color="red" href="https://medium.com/@olinelson93" icon="medium" />
+      </Menu.Menu>
+    </Menu >
   );
 }

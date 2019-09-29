@@ -1,56 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 
+import 'semantic-ui-css/semantic.min.css'
 // higher order components (hocs)
 import CodePage from "./hocs/CodePage";
 import DrumsPage from "./hocs/DrumsPage";
+import Footer from "./Footer"
+
+import styled from 'styled-components'
 
 //components
 import HomePage from "./HomePage";
+import NavBar from "./NavBar";
 
-// animation library pose
-import posed from "react-pose";
+const SiteContainer = styled.div`
+  background: ${props => props.location.pathname === "/drums" ? "black" : "white"} ;
+`
+function App() {
 
-// font awesome
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import {
-  faQuoteRight,
-  faQuoteLeft,
-  faImage,
-  faDesktop,
-  faGem,
-  faCopyright
-} from "@fortawesome/free-solid-svg-icons";
-
-
-
-// dotenv
-require("dotenv").config();
-
-library.add(
-  fab,
-  faQuoteRight,
-  faQuoteLeft,
-  faImage,
-  faDesktop,
-  faGem,
-  faCopyright
-);
-
-class App extends Component {
-  render() {
-    return (
-      <HashRouter basename="/">
-        <div className="app">
-          <Route path="/code" exact component={CodePage} />
-          <Route path="/drums" exact component={DrumsPage} />
+  return <HashRouter basename="/">
+    <div className="app">
+      <Route render={(props) =>
+        <SiteContainer {...props}>
+          <Route render={(props) => <NavBar {...props} />} />
           <Route path="/" exact component={HomePage} />
-        </div>
-      </HashRouter>
-    );
-  }
+          <Route path="/code" component={CodePage} />
+          <Route path="/drums" exact component={DrumsPage} />
+
+          <Footer {...props} />
+        </SiteContainer>
+      } />
+
+    </div>
+  </HashRouter >
 }
 
 export default App;

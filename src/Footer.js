@@ -1,20 +1,24 @@
 import React from "react";
+import { Icon } from "semantic-ui-react"
+import styled from 'styled-components'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+export default function Footer(props) {
 
-export default function Footer() {
+  const FooterContainer = styled.div`
+    height: 30vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: rgba(0,0,0,0);
+    color: ${props => props.location.pathname === "/drums" ? "white" : "black"}
+  `
 
-   const generateCurrentYear = () => {
-    let fullDate = new Date()
-    let year = fullDate.getFullYear()
-    return year
-    }
 
   return (
-    <footer>
+    <FooterContainer {...props}>
       <p>
-        <FontAwesomeIcon icon={"copyright"} /> Oli Nelson {generateCurrentYear()}
+        <Icon name={"copyright"} /> Oli Nelson {new Date().getFullYear()}
       </p>
-    </footer>
+    </FooterContainer>
   );
 }
