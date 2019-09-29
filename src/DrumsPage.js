@@ -50,7 +50,8 @@ export default function DrumsPage() {
       />
     </Item.Group>
 
-    {/* <AlbumGrid /> */}
+
+    <Divider hidden />
 
     <AlbumGrid>
       <Image size="medium" alt="where the rest of the world begins album cover" src="images/wtrotwb.jpg" href="https://54records.com.au/hieronymus-trio-where-the-rest-of-the-world-begins" />

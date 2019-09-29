@@ -13,6 +13,7 @@ export default function Footer(props) {
     color: ${props => props.location.pathname === "/drums" ? "white" : "black"}
   `
 
+  if (props.location.pathname === "/") return null
 
   return (
     <FooterContainer {...props}>

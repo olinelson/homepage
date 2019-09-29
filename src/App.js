@@ -22,6 +22,9 @@ function App() {
     <div className="app">
       <Route render={(props) =>
         <SiteContainer {...props}>
+
+
+
           <Route render={(props) => <NavBar {...props} />} />
           <Route path="/" exact component={HomePage} />
           <Route path="/code" component={CodePage} />

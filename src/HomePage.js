@@ -10,6 +10,9 @@ const HeroBanner = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  *{
+    color: black;
+  }
 `
 
 export default function HomePage() {
