@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export default function Footer(props) {
 
   const FooterContainer = styled.div`
-    height: 30vh;
+    height: 40vh;
     display: grid;
     justify-items: center;
     align-items: center;

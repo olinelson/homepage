@@ -3,9 +3,8 @@ import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 
 import 'semantic-ui-css/semantic.min.css'
-// higher order components (hocs)
-import CodePage from "./hocs/CodePage";
-import DrumsPage from "./hocs/DrumsPage";
+import CodePage from "./CodePage";
+import DrumsPage from "./DrumsPage";
 import Footer from "./Footer"
 
 import styled from 'styled-components'
