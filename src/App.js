@@ -15,6 +15,9 @@ import NavBar from "./NavBar";
 
 const SiteContainer = styled.div`
   background: ${props => props.location.pathname === "/drums" ? "black" : "white"} ;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 `
 function App() {
 
