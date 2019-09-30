@@ -2,7 +2,8 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-import { Menu, Icon, Modal, Header, Button, Form, Divider, Container } from "semantic-ui-react"
+import { Menu, Icon, Modal, Header, Button, Form, Divider, Container, Segment } from "semantic-ui-react"
+import { white } from "ansi-colors";
 
 export default function NavBar(props) {
 
@@ -38,22 +39,23 @@ export default function NavBar(props) {
 
             <>
               <Container textAlign="center">
-                <Button href="mailto:olivernelson@icloud.com" basic inverted icon="mail" />
-                <Button href="http://m.me/oli.nelson1" target="blank" basic inverted icon="facebook" />
-                <Button href="https://www.linkedin.com/in/oli-nelson" target="blank" basic inverted icon="linkedin" />
+                <Button inverted size="massive" href="mailto:olivernelson@icloud.com" basic icon="mail" />
+                <Button inverted size="massive" href="http://m.me/oli.nelson1" target="blank" basic icon="facebook" />
+                <Button inverted size="massive" href="https://www.linkedin.com/in/oli-nelson" target="blank" basic icon="linkedin" />
               </Container>
 
               <Divider hidden />
-              <Divider horizontal style={{ color: "white" }}>Or</Divider>
+              <Divider horizontal style={{ color: "white" }} >Or</Divider>
               <Divider hidden />
 
-              <h2>Send me a message</h2>
+              <h4>Send me a message</h4>
               <Form method="POST" action="https://formspree.io/olivernelson@icloud.com">
-                <Form.Input type="email" name="email" placeholder="your_email@example.com" />
-                <Form.TextArea name="message" placeholder="Test Message" />
-                <Button primary type="submit">Send</Button>
+                <Form.Input transparent type="email" name="email" placeholder="your_email@example.com" />
+                <Form.TextArea transparent name="message" placeholder="It was the best of times; it was the worst of times..." />
+                <Button basic inverted type="submit">Send</Button>
               </Form>
             </>
+
           }
         />
 

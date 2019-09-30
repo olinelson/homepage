@@ -1,11 +1,4 @@
 
-
-
-
-
-p { margin-bottom: 1.5em; }
-p:last-child { margin-bottom: 0; }
-
 blockquote {
   display: block;
 
@@ -32,4 +25,21 @@ blockquote:after {
   text-align: right;
   font-size: 0.875em;
   color: grey;
+}
+
+/* fix for issue with safari desktop causing images in semantic items to stretch */
+.ui.items > .item > .image{
+  height: 100%;
+}
+
+
+.ui.form .field .ui.input input, .ui.form .fields .field .ui.input input {
+  color: white;
+}
+
+
+.ui.form textarea {
+  color: white !important;
+  background: rgba(0,0,0,0) !important;
+  border: 1px solid white !important;
 }

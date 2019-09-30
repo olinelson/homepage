@@ -1,7 +1,6 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
-
 import 'semantic-ui-css/semantic.min.css'
 import CodePage from "./CodePage";
 import DrumsPage from "./DrumsPage";
