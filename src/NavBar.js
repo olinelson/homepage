@@ -31,37 +31,40 @@ export default function NavBar(props) {
 
         <Modal
           trigger={<Menu.Item icon="mail" content="contact" />}
-          basic
+
           closeIcon
-          size='small'
-          header={<h1>contact</h1>}
+          // size='small'
+          header='contact'
           content={
 
-            <>
+            <Container text>
+              <Divider hidden />
+
               <Container textAlign="center">
-                <Button inverted size="massive" href="mailto:olivernelson@icloud.com" basic icon="mail" />
-                <Button inverted size="massive" href="http://m.me/oli.nelson1" target="blank" basic icon="facebook" />
-                <Button inverted size="massive" href="https://www.linkedin.com/in/oli-nelson" target="blank" basic icon="linkedin" />
+                <Button size="massive" href="mailto:olivernelson@icloud.com" icon="mail" />
+                <Button size="massive" href="http://m.me/oli.nelson1" target="blank" icon="facebook" />
+                <Button size="massive" href="https://www.linkedin.com/in/oli-nelson" target="blank" icon="linkedin" />
               </Container>
 
               <Divider hidden />
-              <Divider horizontal style={{ color: "white" }} >Or</Divider>
+              <Divider horizontal  >Or</Divider>
               <Divider hidden />
 
               <h4>Send me a message</h4>
               <Form method="POST" action="https://formspree.io/olivernelson@icloud.com">
-                <Form.Input transparent type="email" name="email" placeholder="your_email@example.com" />
-                <Form.TextArea transparent name="message" placeholder="It was the best of times; it was the worst of times..." />
-                <Button basic inverted type="submit">Send</Button>
+                <Form.Input type="email" name="email" placeholder="your_email@example.com" />
+                <Form.TextArea name="message" placeholder="It was the best of times; it was the worst of times..." />
+                <Button type="submit">Send</Button>
               </Form>
-            </>
-
+              <Divider hidden />
+            </Container>
           }
         />
 
 
 
 
+        <Menu.Item href="https://github.com/olinelson" icon="github" />
         <Menu.Item href="https://www.youtube.com/user/MrOlibobo" icon="youtube" />
         <Menu.Item href="https://www.facebook.com/oli.nelson1" icon="facebook" />
         <Menu.Item href="https://www.instagram.com/olinelsondrums/" icon="instagram" />

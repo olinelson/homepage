@@ -68,6 +68,22 @@ export default function TechnicalSkills() {
       </IconContainer>
 
       <IconContainer>
+        handlebars
+      </IconContainer>
+
+      <IconContainer>
+        mustache
+      </IconContainer>
+
+      <IconContainer>
+        MongoDB
+      </IconContainer>
+
+      <IconContainer>
+        socket.io
+      </IconContainer>
+
+      <IconContainer>
         bootstrap
       </IconContainer>
 
