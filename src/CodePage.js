@@ -30,7 +30,7 @@ export default function CodePage() {
     },
     {
       image: 'images/chat-app.png',
-      href: 'https://olinelson-weather-app.herokuapp.com/',
+      href: 'https://olinelson-chat-app.herokuapp.com/',
       header: 'Chat APP',
       meta: 'Node.js, Socket.io, Javascript, Mustache',
       description: 'A 90s style real time chat room application built with Node.js and Socket.io. Users can join chat rooms, send messages to users and share their location.',
