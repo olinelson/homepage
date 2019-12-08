@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: olinelson.com
-Token: 6d328d64f64d6b1fd92a62f665eb24e6c1312bf787c834e13326652855aa94e2
