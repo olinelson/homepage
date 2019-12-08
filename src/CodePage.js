@@ -161,7 +161,7 @@ export default function CodePage() {
       <h1>clients</h1>
       <Card.Group itemsPerRow={3} stackable items={clientWork} />
 
-      <h1>projects</h1>
+      <h1>recent projects</h1>
       <Card.Group itemsPerRow={3} stackable items={projectWork} />
 
       <Divider hidden />
