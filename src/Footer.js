@@ -1,19 +1,19 @@
 import React from "react";
-import { Icon } from "semantic-ui-react"
-import styled from 'styled-components'
+import { Icon } from "semantic-ui-react";
+import styled from "styled-components";
 
 export default function Footer(props) {
-
   const FooterContainer = styled.div`
     height: 40vh;
     display: grid;
     justify-items: center;
     align-items: center;
-    background: rgba(0,0,0,0);
-    color: ${props => props.location.pathname === "/drums" ? "white" : "black"}
-  `
+    background: rgba(0, 0, 0, 0);
+    color: ${props =>
+      props.location.pathname === "/drums" ? "white" : "black"};
+  `;
 
-  if (props.location.pathname === "/") return null
+  if (props.location.pathname === "/") return null;
 
   return (
     <FooterContainer {...props}>

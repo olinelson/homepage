@@ -1,13 +1,13 @@
 import React from "react";
-import { Icon } from 'semantic-ui-react'
-import styled from 'styled-components'
+import { Icon } from "semantic-ui-react";
+import styled from "styled-components";
 
 const IconGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(6rem, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   justify-items: center;
   grid-gap: 1rem;
-`
+`;
 const IconContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,111 +15,84 @@ const IconContainer = styled.div`
   text-align: center;
   align-content: center;
   align-items: center;
-`
+`;
 
 export default function TechnicalSkills() {
-  return <>
-    <h1>technical skills</h1>
-    <IconGrid>
-      <IconContainer>
-        <Icon name="gem" />
-        Ruby
-      </IconContainer>
+  return (
+    <>
+      <h1>technical skills</h1>
+      <IconGrid>
+        <IconContainer>
+          <Icon name='gem' />
+          Ruby
+        </IconContainer>
 
-      <IconContainer>
-        <Icon name="js" />
-        JavaScript
-      </IconContainer>
+        <IconContainer>
+          <Icon name='js' />
+          JavaScript
+        </IconContainer>
 
-      <IconContainer>
-        <Icon name="html5" />
-        html5
-      </IconContainer>
+        <IconContainer>typescript</IconContainer>
 
-      <IconContainer>
-        <Icon name="css3 alternate" />
-        css3
-      </IconContainer>
+        <IconContainer>Swift</IconContainer>
 
-      <IconContainer>
-        <Icon name="react" />
-        react
-      </IconContainer>
+        <IconContainer>
+          <Icon name='html5' />
+          html5
+        </IconContainer>
 
-      <IconContainer>
-        <Icon name="vuejs" />
-        vuejs
-      </IconContainer>
+        <IconContainer>
+          <Icon name='css3 alternate' />
+          css3
+        </IconContainer>
 
-      <IconContainer>
-        ruby on rails
-      </IconContainer>
+        <IconContainer>
+          <Icon name='react' />
+          react
+        </IconContainer>
 
-      <IconContainer>
-        sails.js
-      </IconContainer>
+        <IconContainer>
+          <Icon name='vuejs' />
+          vuejs
+        </IconContainer>
 
-      <IconContainer>
-        <Icon size="large" name="node" />
-      </IconContainer>
+        <IconContainer>ruby on rails</IconContainer>
 
-      <IconContainer>
-        typescript
-      </IconContainer>
+        <IconContainer>sails.js</IconContainer>
 
-      <IconContainer>
-        handlebars
-      </IconContainer>
+        <IconContainer>
+          <Icon size='large' name='node' />
+        </IconContainer>
 
-      <IconContainer>
-        mustache
-      </IconContainer>
+        <IconContainer>handlebars</IconContainer>
 
-      <IconContainer>
-        MongoDB
-      </IconContainer>
+        <IconContainer>mustache</IconContainer>
 
-      <IconContainer>
-        socket.io
-      </IconContainer>
+        <IconContainer>MongoDB</IconContainer>
 
-      <IconContainer>
-        bootstrap
-      </IconContainer>
+        <IconContainer>socket.io</IconContainer>
 
-      <IconContainer>
-        semantic ui
-      </IconContainer>
+        <IconContainer>bootstrap</IconContainer>
 
-      <IconContainer>
-        <Icon size="large" name="git" />
-      </IconContainer>
+        <IconContainer>semantic ui</IconContainer>
 
-      <IconContainer>
-        <Icon name="google" />
-        google cloud
-      </IconContainer>
+        <IconContainer>
+          <Icon size='large' name='git' />
+        </IconContainer>
 
-      <IconContainer>
-        postgresql
-      </IconContainer>
+        <IconContainer>
+          <Icon name='google' />
+          google cloud
+        </IconContainer>
 
-      <IconContainer>
-        sqlite
-      </IconContainer>
+        <IconContainer>postgresql</IconContainer>
 
-      <IconContainer>
-        redux
-      </IconContainer>
+        <IconContainer>sqlite</IconContainer>
 
-      <IconContainer>
-        jwt
-      </IconContainer>
+        <IconContainer>redux</IconContainer>
 
-
-
-
-
-    </IconGrid>
-  </>
+        <IconContainer>jwt</IconContainer>
+      </IconGrid>
+    </>
+  );
 }
