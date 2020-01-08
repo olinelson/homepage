@@ -39,6 +39,13 @@ export default function CodePage() {
             <Icon name='chain' />
             Live
           </Menu.Item>
+          <Menu.Item
+            href='https://github.com/olinelson/inner-wisdom'
+            target='blank'
+          >
+            <Icon name='github' />
+            GitHub
+          </Menu.Item>
         </Menu>
       )
     },

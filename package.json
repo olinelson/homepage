@@ -3,7 +3,7 @@
   "homepage": "https://olinelson.com/",
   "version": "0.1.0",
   "engines": {
-    "node": "12.12.0"
+    "node": "13.2.0"
   },
   "private": true,
   "dependencies": {
