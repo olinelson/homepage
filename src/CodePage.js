@@ -54,7 +54,7 @@ export default function CodePage() {
       href: "https://antipodesband.com/",
       header: "Antipodes",
       description:
-        "TThis is a simple one page site for the australian based band Antipodes. I had a lot of fun finding some new react plugins to add some slick animations. I also enjoyed sinking my teeth into Semantic Ui React.",
+        "This is a simple one page site for the australian based band Antipodes. I had a lot of fun finding some new react plugins to add some slick animations. I also enjoyed sinking my teeth into Semantic Ui React.",
       meta: "JavaScript, React",
       extra: (
         <Menu fluid borderless compact secondary stackable>
@@ -64,6 +64,29 @@ export default function CodePage() {
           </Menu.Item>
           <Menu.Item
             href='https://github.com/olinelson/antipodes'
+            target='blank'
+          >
+            <Icon name='github' />
+            GitHub
+          </Menu.Item>
+        </Menu>
+      )
+    },
+    {
+      image: "images/mum.png",
+      href: "https://deborahdegraaff.com",
+      header: "Deborah de Graaff",
+      description:
+        "The homepage for Sydney based clarinetist Deborah de Graaff",
+      meta: "JavaScript, React",
+      extra: (
+        <Menu fluid borderless compact secondary stackable>
+          <Menu.Item href='https://deborahdegraaff.com' target='blank'>
+            <Icon name='chain' />
+            Live
+          </Menu.Item>
+          <Menu.Item
+            href='https://github.com/olinelson/deborah-de-graaff'
             target='blank'
           >
             <Icon name='github' />
@@ -165,7 +188,7 @@ export default function CodePage() {
       </Item.Group>
 
       <Divider hidden />
-      <h1>clients</h1>
+      <h1>recent clients</h1>
       <Card.Group itemsPerRow={3} stackable items={clientWork} />
 
       <h1>recent projects</h1>
