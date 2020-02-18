@@ -98,6 +98,29 @@ export default function CodePage() {
   ];
   const projectWork = [
     {
+      image: "images/transcribr2.png",
+      href: "http://www.transcribrapp.com/",
+      header: "Transcribr App",
+      description:
+        "Transcribe any audio or video file, search by transcript, export docx and text files and more!",
+      meta: "Node.js, Socket.io, Google Speech To Text, React , Gatsby.js",
+      extra: (
+        <Menu fluid borderless compact secondary stackable>
+          <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
+            <Icon name='chain' />
+            Live
+          </Menu.Item>
+          <Menu.Item
+            href='https://github.com/olinelson/transcribr2'
+            target='blank'
+          >
+            <Icon name='github' />
+            GitHub
+          </Menu.Item>
+        </Menu>
+      )
+    },
+    {
       image: "images/chat-app.png",
       href: "https://olinelson-chat-app.herokuapp.com/",
       header: "Chat APP",
@@ -142,30 +165,30 @@ export default function CodePage() {
           </Menu.Item>
         </Menu>
       )
-    },
-    {
-      image: "images/transcribrScreeNshot.png",
-      href: "http://www.transcribrapp.com/",
-      header: "Transcribr App",
-      description:
-        "This project was born out of my fiancé’s frustration at not being able to search her podcasts by text. Users upload any video, audio file or paste in a youtube link and the app will transcribe it for them, providing a clickable transcript.",
-      meta: "Ruby, Rails, JavaScript, React",
-      extra: (
-        <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
-            <Icon name='chain' />
-            Live
-          </Menu.Item>
-          <Menu.Item
-            href='https://github.com/olinelson/transcribr'
-            target='blank'
-          >
-            <Icon name='github' />
-            GitHub
-          </Menu.Item>
-        </Menu>
-      )
     }
+    // {
+    //   image: "images/transcribrScreeNshot.png",
+    //   href: "http://www.transcribrapp.com/",
+    //   header: "Transcribr App",
+    //   description:
+    //     "This project was born out of my fiancé’s frustration at not being able to search her podcasts by text. Users upload any video, audio file or paste in a youtube link and the app will transcribe it for them, providing a clickable transcript.",
+    //   meta: "Ruby, Rails, JavaScript, React",
+    //   extra: (
+    //     <Menu fluid borderless compact secondary stackable>
+    //       <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
+    //         <Icon name='chain' />
+    //         Live
+    //       </Menu.Item>
+    //       <Menu.Item
+    //         href='https://github.com/olinelson/transcribr'
+    //         target='blank'
+    //       >
+    //         <Icon name='github' />
+    //         GitHub
+    //       </Menu.Item>
+    //     </Menu>
+    //   )
+    // }
   ];
 
   return (
