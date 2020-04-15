@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   Container,
@@ -8,31 +8,22 @@ import {
   Icon,
   Menu,
   Divider
-} from "semantic-ui-react";
+} from 'semantic-ui-react'
 
-import TechnicalSkills from "./TechnicalSkills";
+import TechnicalSkills from './TechnicalSkills'
 
-export default function CodePage() {
+export default function CodePage () {
   const bio = `
-  Full stack web developer with a passion for innovation and efficiency.
-  With experience in Ruby on Rails, JavaScript, React and a background
-  in music, I discovered web development through intense personal
-  curiosity that then motivated me to seek accredited training with the
-  Flatiron school.I bring strong skills in project management, problem
-  solving and creativity that help innovative companies to create
-  efficient and effective products.As an established musician, I am
-  very comfortable as a self - directed learner and I understand the long
-  term benefits of practice, patience and persistence when building
-  skills and developing unique products.`;
+ Full stack developer with a passion for innovation and efficiency. With experience in Ruby on Rails, Node.js, JavaScript, TypeScript, React and a background in music, I discovered web development through intense personal curiosity that then motivated me to seek accredited training with the Flatiron school. I bring strong skills in project management, problem solving and creativity that help innovative companies to create efficient and effective products. As an established musician, I am very comfortable as a self-directed learner and I understand the long term benefits of practice, patience and persistence when building skills and developing unique products.`
 
   const clientWork = [
     {
-      image: "images/inner-wisdom-placeit.jpg",
-      href: "https://www.wisdompsych.com.au/",
-      header: "Inner Wisdom",
-      meta: "Javascript, React, Ruby, Rails, Webpacker",
+      image: 'images/inner-wisdom-placeit.jpg',
+      href: 'https://www.wisdompsych.com.au/',
+      header: 'Inner Wisdom',
+      meta: 'Javascript, React, Ruby, Rails, Webpacker',
       description:
-        "A client booking and management web app specifically designed for Inner Wisdom Psychology. Built on ruby on rails with views rendered with the webpacker gem and react.",
+        'A client booking and management web app specifically designed for Inner Wisdom Psychology. Built on ruby on rails with views rendered with the webpacker gem and react.',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='https://www.wisdompsych.com.au/' target='blank'>
@@ -50,12 +41,12 @@ export default function CodePage() {
       )
     },
     {
-      image: "images/antipodes.jpg",
-      href: "https://antipodesband.com/",
-      header: "Antipodes",
+      image: 'images/antipodes.jpg',
+      href: 'https://antipodesband.com/',
+      header: 'Antipodes',
       description:
-        "This is a simple one page site for the australian based band Antipodes. I had a lot of fun finding some new react plugins to add some slick animations. I also enjoyed sinking my teeth into Semantic Ui React.",
-      meta: "JavaScript, React",
+        'This is a simple one page site for the australian based band Antipodes. I had a lot of fun finding some new react plugins to add some slick animations. I also enjoyed sinking my teeth into Semantic Ui React.',
+      meta: 'JavaScript, React',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='https://antipodesband.com/' target='blank'>
@@ -73,12 +64,12 @@ export default function CodePage() {
       )
     },
     {
-      image: "images/mum.png",
-      href: "https://deborahdegraaff.com",
-      header: "Deborah de Graaff",
+      image: 'images/mum.png',
+      href: 'https://deborahdegraaff.com',
+      header: 'Deborah de Graaff',
       description:
-        "The homepage for Sydney based clarinetist Deborah de Graaff",
-      meta: "JavaScript, React",
+        'The homepage for Sydney based clarinetist Deborah de Graaff',
+      meta: 'JavaScript, React',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='https://deborahdegraaff.com' target='blank'>
@@ -95,15 +86,15 @@ export default function CodePage() {
         </Menu>
       )
     }
-  ];
+  ]
   const projectWork = [
     {
-      image: "images/transcribr2.png",
-      href: "http://www.transcribrapp.com/",
-      header: "Transcribr App",
+      image: 'images/transcribr2.png',
+      href: 'http://www.transcribrapp.com/',
+      header: 'Transcribr App',
       description:
-        "Transcribe any audio or video file, search by transcript, export docx and text files and more!",
-      meta: "Node.js, Socket.io, Google Speech To Text, React , Gatsby.js",
+        'Transcribe any audio or video file, search by transcript, export docx and text files and more!',
+      meta: 'Node.js, Socket.io, Google Speech To Text, React , Gatsby.js',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
@@ -121,12 +112,35 @@ export default function CodePage() {
       )
     },
     {
-      image: "images/chat-app.png",
-      href: "https://olinelson-chat-app.herokuapp.com/",
-      header: "Chat APP",
-      meta: "Node.js, Socket.io, Javascript, Mustache",
+      image: 'images/react_snake.png',
+      href: 'http://olinelson.github.io/react_snake',
+      header: 'React Snake',
       description:
-        "A 90s style real time chat room application built with Node.js and Socket.io. Users can join chat rooms, send messages to users and share their location.",
+        'A simple, react version of the classic snake game on those old Nokia phones.',
+      meta: 'React.js',
+      extra: (
+        <Menu fluid borderless compact secondary stackable>
+          <Menu.Item href='http://olinelson.github.io/react_snake' target='blank'>
+            <Icon name='chain' />
+            Live
+          </Menu.Item>
+          <Menu.Item
+            href='https://github.com/olinelson/react_snake'
+            target='blank'
+          >
+            <Icon name='github' />
+            GitHub
+          </Menu.Item>
+        </Menu>
+      )
+    },
+    {
+      image: 'images/chat-app.png',
+      href: 'https://olinelson-chat-app.herokuapp.com/',
+      header: 'Chat APP',
+      meta: 'Node.js, Socket.io, Javascript, Mustache',
+      description:
+        'A 90s style real time chat room application built with Node.js and Socket.io. Users can join chat rooms, send messages to users and share their location.',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='https://github.com/olinelson/weather' target='blank'>
@@ -144,12 +158,12 @@ export default function CodePage() {
       )
     },
     {
-      image: "images/weather-app.png",
-      href: "https://olinelson-weather-app.herokuapp.com/",
-      header: "Weather",
-      meta: "Node.js, Handlebars, Javascript, CSS, Dark Sky API",
+      image: 'images/weather-app.png',
+      href: 'https://olinelson-weather-app.herokuapp.com/',
+      header: 'Weather',
+      meta: 'Node.js, Handlebars, Javascript, CSS, Dark Sky API',
       description:
-        "A super simple weather forecast app built with Node.js. Can search by city/town name or get the users current location",
+        'A super simple weather forecast app built with Node.js. Can search by city/town name or get the users current location',
       extra: (
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item href='https://github.com/olinelson/weather' target='blank'>
@@ -189,11 +203,11 @@ export default function CodePage() {
     //     </Menu>
     //   )
     // }
-  ];
+  ]
 
   return (
     <Container>
-      <h1 style={{ fontSize: "4rem" }}>Oli Nelson</h1>
+      <h1 style={{ fontSize: '4rem' }}>Oli Nelson</h1>
       <Item.Group>
         <Item
           header={<h1>about</h1>}
@@ -220,5 +234,5 @@ export default function CodePage() {
       <Divider hidden />
       <TechnicalSkills />
     </Container>
-  );
+  )
 }
