@@ -1,14 +1,14 @@
-import React from "react";
-import { Item, Image, Container, Icon, Divider } from "semantic-ui-react";
+import React from 'react'
+import { Item, Image, Container, Icon, Divider } from 'semantic-ui-react'
 
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const AlbumGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   justify-items: center;
-`;
+`
 const bio = `
     Oli Nelson is an acclaimed Australian drummer from Sydney Australia,
     now based in New York City. He has performed alongside leading jazz
@@ -27,16 +27,16 @@ const bio = `
     2015/16 USA tour. He is known as a versatile and innovative artist who
     enjoys performing both ‘within’ and ‘on the edges’ of the jazz and
     improvised dialects.
-  `;
+  `
 
-export default function DrumsPage() {
+export default function DrumsPage () {
   return (
-    <Container style={{ background: "black", color: "white" }}>
-      <h1 style={{ fontSize: "4rem" }}>Oli Nelson</h1>
+    <Container style={{ background: 'black', color: 'white' }}>
+      <h1 style={{ fontSize: '4rem' }}>Oli Nelson</h1>
 
       <Item.Group>
         <Item
-          style={{ color: "white" }}
+          style={{ color: 'white' }}
           header={<h1 color='white'>about</h1>}
           image={<Image size='medium' src='images/promo1.jpg' />}
           meta={
@@ -67,13 +67,19 @@ export default function DrumsPage() {
               />
             </>
           }
-          description={<p style={{ color: "white" }}>{bio}</p>}
+          description={<p style={{ color: 'white' }}>{bio}</p>}
         />
       </Item.Group>
 
       <Divider hidden />
 
       <AlbumGrid>
+        <Image
+          size='medium'
+          alt='I Wrote You A Song Album Cover'
+          src='images/i_wrote_you_a_song.jpg'
+          href='https://emmastephensonmusic.com/i_wrote_you_a_song/'
+        />
         <Image
           size='medium'
           alt='where the rest of the world begins album cover'
@@ -102,7 +108,7 @@ export default function DrumsPage() {
 
       <Divider hidden />
 
-      <Container style={{ background: "rgba(0,0,0,0)" }} text>
+      <Container style={{ background: 'rgba(0,0,0,0)' }} text>
         <blockquote cite='delarue | New York Music Daily'>
           Fearlessly individualistic talent who defies easy categorization
         </blockquote>
@@ -117,11 +123,11 @@ export default function DrumsPage() {
         </blockquote>
 
         <blockquote cite=' John Shand | The Sydney Morning Herald'>
-          {" "}
+          {' '}
           This has such a fragile, diaphanous beauty that I sometimes had to
           remind myself to breathe as I listened
         </blockquote>
       </Container>
     </Container>
-  );
+  )
 }
