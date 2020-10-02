@@ -120,7 +120,10 @@ export default function CodePage () {
       meta: 'React.js',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='http://olinelson.github.io/react_snake' target='blank'>
+          <Menu.Item
+            href='http://olinelson.github.io/react_snake'
+            target='blank'
+          >
             <Icon name='chain' />
             Live
           </Menu.Item>
@@ -216,7 +219,7 @@ export default function CodePage () {
           meta={
             <a
               className='resume-link'
-              href='https://docs.google.com/presentation/d/1--AjndSnU3yztOyNebUBDgXGvodAWFGYgK6zKJV3xyg/edit?usp=sharing'
+              href='https://docs.google.com/document/d/1w-oxAaiwLc9dsF-rGCAhDQq5PlgLqZaijDQu_80sqIE/edit?usp=sharing'
             >
               Click here to view resumé.
             </a>
