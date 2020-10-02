@@ -218,6 +218,7 @@ export default function CodePage () {
           description={bio}
           meta={
             <a
+              target='_blank'
               className='resume-link'
               href='https://docs.google.com/document/d/1w-oxAaiwLc9dsF-rGCAhDQq5PlgLqZaijDQu_80sqIE/edit?usp=sharing'
             >
