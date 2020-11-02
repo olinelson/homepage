@@ -23,16 +23,16 @@ export default function CodePage () {
       header: 'Inner Wisdom',
       meta: 'Javascript, React, Ruby, Rails, Webpacker',
       description:
-        'A client booking and management web app specifically designed for Inner Wisdom Psychology. Built on ruby on rails with views rendered with the webpacker gem and react.',
+        'A client booking and management web app specifically designed for Inner Wisdom Psychology.',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='https://www.wisdompsych.com.au/' target='blank'>
+          <Menu.Item href='https://www.wisdompsych.com.au/' target='_blank'>
             <Icon name='chain' />
             Live
           </Menu.Item>
           <Menu.Item
             href='https://github.com/olinelson/inner-wisdom'
-            target='blank'
+            target='_blank'
           >
             <Icon name='github' />
             GitHub
@@ -49,13 +49,13 @@ export default function CodePage () {
       meta: 'JavaScript, React',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='https://antipodesband.com/' target='blank'>
+          <Menu.Item href='https://antipodesband.com/' target='_blank'>
             <Icon name='chain' />
             Live
           </Menu.Item>
           <Menu.Item
             href='https://github.com/olinelson/antipodes'
-            target='blank'
+            target='_blank'
           >
             <Icon name='github' />
             GitHub
@@ -72,13 +72,13 @@ export default function CodePage () {
       meta: 'JavaScript, React',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='https://deborahdegraaff.com' target='blank'>
+          <Menu.Item href='https://deborahdegraaff.com' target='_blank'>
             <Icon name='chain' />
             Live
           </Menu.Item>
           <Menu.Item
             href='https://github.com/olinelson/deborah-de-graaff'
-            target='blank'
+            target='_blank'
           >
             <Icon name='github' />
             GitHub
@@ -89,21 +89,20 @@ export default function CodePage () {
   ]
   const projectWork = [
     {
-      image: 'images/transcribr2.png',
-      href: 'http://www.transcribrapp.com/',
-      header: 'Transcribr App',
-      description:
-        'Transcribe any audio or video file, search by transcript, export docx and text files and more!',
-      meta: 'Node.js, Socket.io, Google Speech To Text, React , Gatsby.js',
+      image: '/images/foto.jpg',
+      href: 'https://photo-viewer-64843.web.app/',
+      header: 'Foto.',
+      description: 'A very pretty photo viewer',
+      meta: 'React, Unsplash',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
+          <Menu.Item href='https://photo-viewer-64843.web.app/' target='_blank'>
             <Icon name='chain' />
             Live
           </Menu.Item>
           <Menu.Item
-            href='https://github.com/olinelson/transcribr2'
-            target='blank'
+            href='https://github.com/olinelson/photo-viewer'
+            target='_blank'
           >
             <Icon name='github' />
             GitHub
@@ -112,7 +111,30 @@ export default function CodePage () {
       )
     },
     {
-      image: 'images/react_snake.png',
+      image: '/images/calculator1.png',
+      href: 'https://calculator-3f562.web.app/',
+      header: 'Calculator',
+      description: 'A simple calculator based on the stock macOs app',
+      meta: 'Vue, Quasar, LocalBase',
+      extra: (
+        <Menu fluid borderless compact secondary stackable>
+          <Menu.Item href='https://calculator-3f562.web.app/' target='_blank'>
+            <Icon name='chain' />
+            Live
+          </Menu.Item>
+          <Menu.Item
+            href='https://github.com/olinelson/calculator'
+            target='_blank'
+          >
+            <Icon name='github' />
+            GitHub
+          </Menu.Item>
+        </Menu>
+      )
+    },
+    {
+      image: '/images/snake1.png',
+
       href: 'http://olinelson.github.io/react_snake',
       header: 'React Snake',
       description:
@@ -122,14 +144,14 @@ export default function CodePage () {
         <Menu fluid borderless compact secondary stackable>
           <Menu.Item
             href='http://olinelson.github.io/react_snake'
-            target='blank'
+            target='_blank'
           >
             <Icon name='chain' />
             Live
           </Menu.Item>
           <Menu.Item
             href='https://github.com/olinelson/react_snake'
-            target='blank'
+            target='_blank'
           >
             <Icon name='github' />
             GitHub
@@ -138,51 +160,75 @@ export default function CodePage () {
       )
     },
     {
-      image: 'images/chat-app.png',
-      href: 'https://olinelson-chat-app.herokuapp.com/',
-      header: 'Chat APP',
-      meta: 'Node.js, Socket.io, Javascript, Mustache',
+      image: 'images/transcribr2.png',
+      href: 'http://www.transcribrapp.com/',
+      header: 'Transcribr App',
       description:
-        'A 90s style real time chat room application built with Node.js and Socket.io. Users can join chat rooms, send messages to users and share their location.',
+        'Transcribe any audio or video file, search by transcript, export docx and text files and more!',
+      meta: 'Node.js, Socket.io, Google Speech To Text, React , Gatsby.js',
       extra: (
         <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='https://github.com/olinelson/weather' target='blank'>
-            <Icon name='github' />
-            GitHub
-          </Menu.Item>
-          <Menu.Item
-            href='https://olinelson-weather-app.herokuapp.com/'
-            target='blank'
-          >
+          <Menu.Item href='http://www.transcribrapp.com/' target='_blank'>
             <Icon name='chain' />
             Live
           </Menu.Item>
-        </Menu>
-      )
-    },
-    {
-      image: 'images/weather-app.png',
-      href: 'https://olinelson-weather-app.herokuapp.com/',
-      header: 'Weather',
-      meta: 'Node.js, Handlebars, Javascript, CSS, Dark Sky API',
-      description:
-        'A super simple weather forecast app built with Node.js. Can search by city/town name or get the users current location',
-      extra: (
-        <Menu fluid borderless compact secondary stackable>
-          <Menu.Item href='https://github.com/olinelson/weather' target='blank'>
+          <Menu.Item
+            href='https://github.com/olinelson/transcribr2'
+            target='_blank'
+          >
             <Icon name='github' />
             GitHub
-          </Menu.Item>
-          <Menu.Item
-            href='https://olinelson-weather-app.herokuapp.com/'
-            target='blank'
-          >
-            <Icon name='chain' />
-            Live
           </Menu.Item>
         </Menu>
       )
     }
+
+    // {
+    //   image: 'images/chat-app.png',
+    //   href: 'https://olinelson-chat-app.herokuapp.com/',
+    //   header: 'Chat APP',
+    //   meta: 'Node.js, Socket.io, Javascript, Mustache',
+    //   description:
+    //     'A 90s style real time chat room application built with Node.js and Socket.io. Users can join chat rooms, send messages to users and share their location.',
+    //   extra: (
+    //     <Menu fluid borderless compact secondary stackable>
+    //       <Menu.Item href='https://github.com/olinelson/weather' target='_blank'>
+    //         <Icon name='github' />
+    //         GitHub
+    //       </Menu.Item>
+    //       <Menu.Item
+    //         href='https://olinelson-weather-app.herokuapp.com/'
+    //         target='_blank'
+    //       >
+    //         <Icon name='chain' />
+    //         Live
+    //       </Menu.Item>
+    //     </Menu>
+    //   )
+    // }
+    // {
+    //   image: 'images/weather-app.png',
+    //   href: 'https://olinelson-weather-app.herokuapp.com/',
+    //   header: 'Weather',
+    //   meta: 'Node.js, Handlebars, Javascript, CSS, Dark Sky API',
+    //   description:
+    //     'A super simple weather forecast app built with Node.js. Can search by city/town name or get the users current location',
+    //   extra: (
+    //     <Menu fluid borderless compact secondary stackable>
+    //       <Menu.Item href='https://github.com/olinelson/weather' target='_blank'>
+    //         <Icon name='github' />
+    //         GitHub
+    //       </Menu.Item>
+    //       <Menu.Item
+    //         href='https://olinelson-weather-app.herokuapp.com/'
+    //         target='_blank'
+    //       >
+    //         <Icon name='chain' />
+    //         Live
+    //       </Menu.Item>
+    //     </Menu>
+    //   )
+    // }
     // {
     //   image: "images/transcribrScreeNshot.png",
     //   href: "http://www.transcribrapp.com/",
@@ -192,13 +238,13 @@ export default function CodePage () {
     //   meta: "Ruby, Rails, JavaScript, React",
     //   extra: (
     //     <Menu fluid borderless compact secondary stackable>
-    //       <Menu.Item href='http://www.transcribrapp.com/' target='blank'>
+    //       <Menu.Item href='http://www.transcribrapp.com/' target='_blank'>
     //         <Icon name='chain' />
     //         Live
     //       </Menu.Item>
     //       <Menu.Item
     //         href='https://github.com/olinelson/transcribr'
-    //         target='blank'
+    //         target='_blank'
     //       >
     //         <Icon name='github' />
     //         GitHub
@@ -229,11 +275,11 @@ export default function CodePage () {
       </Item.Group>
 
       <Divider hidden />
-      <h1>recent clients</h1>
-      <Card.Group itemsPerRow={3} stackable items={clientWork} />
-
       <h1>recent projects</h1>
       <Card.Group itemsPerRow={3} stackable items={projectWork} />
+
+      <h1>recent clients</h1>
+      <Card.Group itemsPerRow={3} stackable items={clientWork} />
 
       <Divider hidden />
       <TechnicalSkills />
